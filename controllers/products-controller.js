@@ -24,7 +24,6 @@ const createProduct = (imageURL, category,name, price, description, id) => {
 
 const productContainer = document.querySelector('[data-product]')
 
-
 productsServices
     .productsList()
     .then((data) => {
@@ -40,6 +39,38 @@ productsServices
     });
 }).catch((error) => alert("An error occurred."));
 
+const renderProduct = ({imageURL, name, price, description})  => {
+    const content = `
+    <div class="dp-image">
+            <img src="${imageURL}">
+        </div>
+
+        <div class="dp-info-container">
+
+            <h2>${name}</h2>
+            <h5>${price}</h5>
+            <p>${description}</p>
+
+        </div>
+    `;
+    return content;
+}
+const renderContainer = document.querySelector('.dp-container')
+
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString)
+
+productsServices
+    .getProductById(urlParams.get('id'))
+    .then((data) => {
+        const product = renderProduct(data);
+        console.log('product', product)
+        renderContainer.innerHTML = product;
+    });
+
+
+    
 
 
 

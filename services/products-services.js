@@ -21,6 +21,21 @@ const productsList = () => {
         .catch(error => console.error(error));
 };
 
+
+////get product by id////
+
+const getProductById = (id) => {
+    return fetch("http://localhost:3000/product")
+        .then(response => response.json())
+        .then(data => {
+            const object = data.find(element => element.id === id);
+            return object;
+        })
+        .catch(error => console.error(error));
+};
+
+
+
 // //POST
 
  const createProducts =  (imageURL, category, name, price, description, id) => {
@@ -49,5 +64,6 @@ const productsList = () => {
 
 export const productsServices = {
     productsList,
-    createProducts
+    createProducts,
+    getProductById
 }

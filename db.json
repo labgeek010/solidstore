@@ -6,7 +6,7 @@
       "category": "Pop",
       "price": "$15,000",
       "description": "Abcde...",
-      "id": 1
+      "id": "ecc4b6f3-b7fa-4d7d-b710-c06f3fa2105c"
     },
     {
       "name": "Castlevania Dracula",
@@ -14,7 +14,7 @@
       "category": "Pop",
       "price": "$20,000",
       "description": "Abcde...",
-      "id": 2
+      "id": "ecc4b6f3-b7fa-4d7t-b710-c06f3fa2205c"
     },
     {
       "name": "Castlevania Cypha",
@@ -22,7 +22,7 @@
       "category": "Pop",
       "price": "$20,000",
       "description": "Abcde...",
-      "id": 3
+      "id": "ecc4b6v3-b7fa-4d7d-b710-c06f3fa2205c"
     },
     {
       "name": "Castlevania Trevor",
@@ -30,7 +30,7 @@
       "category": "Pop",
       "price": "$20,000",
       "description": "Abcde...",
-      "id": 4
+      "id": "ecc4b6f3-b7fa-4d7d-b710-c06f3fa220vc"
     },
     {
       "name": "Castlevania Alucard",
@@ -38,7 +38,7 @@
       "category": "Pop",
       "price": "$20,000",
       "description": "Abcde...",
-      "id": 5
+      "id": "ecc4b6f3-b7fa-4d7d-b710-c06f3fa1205c"
     },
     {
       "name": "Castlevania Blue Fangs",
@@ -46,7 +46,7 @@
       "category": "Pop",
       "price": "$20,000",
       "description": "Abcde...",
-      "id": 6
+      "id": "ecc4b6f3-b7fa-md7d-b710-c06f3fa2205c"
     },
     {
       "imageURL": "https://www.enter.co/wp-content/uploads/2014/09/ps-tv-dest.jpg",
@@ -54,7 +54,7 @@
       "name": "Ps Vita TV Black Open Box",
       "price": "250$",
       "description": "Mint Condition",
-      "id": 7
+      "id": "ecc4b6f3-b7fa-4d7d-b710-c06f3fa2205c"
     },
     {
       "imageURL": "https://i.etsystatic.com/32195692/r/il/654d25/4627940168/il_fullxfull.4627940168_a820.jpg",
@@ -62,7 +62,7 @@
       "name": "Ps Vita Slim White Japanese Open Box",
       "price": "300$",
       "description": "Clean mint condition",
-      "id": 8
+      "id": "ecc4b6f3-b7fa-4j7d-b710-c06f3fa2205c"
     },
     {
       "imageURL": "https://i0.wp.com/applebygames.co.nz/wp-content/uploads/2022/08/WHITE-PS2-console-NTSC-PHAT-PS2-console.png?fit=1416%2C939&ssl=1",
@@ -70,7 +70,7 @@
       "name": "PS2 FAT Japanese ",
       "price": "250$",
       "description": "ABCD",
-      "id": 9
+      "id": "ecc4t6f3-b7fa-4d7d-b710-c06f3fa2205c"
     },
     {
       "imageURL": "https://m.media-amazon.com/images/I/61kFDLvdM6L._AC_UF1000,1000_QL80_.jpg",
