@@ -34,6 +34,16 @@ const getProductById = (id) => {
         .catch(error => console.error(error));
 };
 
+/////get product by category ///
+const getProductByCategory = (category) => {
+    return fetch("http://localhost:3000/product")
+        .then(response => response.json())
+        .then(data => {
+            const objectArray = data.filter(element => element.category === category);
+            return objectArray;
+        })
+        .catch(error => console.error(error));
+};
 
 
 // //POST
@@ -65,5 +75,6 @@ const getProductById = (id) => {
 export const productsServices = {
     productsList,
     createProducts,
-    getProductById
+    getProductById,
+    getProductByCategory
 }
