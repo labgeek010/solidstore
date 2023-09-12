@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolidStore</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/assets/css/add-item.css">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    
+</head>
+<body>
+<main class="main-wrap">
+
+    <!-- here comes the header -->
+    <header>
+        <div class="top-bar">
+
+            <div class="top-bar-left">
+                <div class="logo-container">
+                    <img src="/assets/img/logo.png" alt="logo-store">
+                </div>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="What are you searching for?">
+                    <img src="/assets/img/aug-vector.png" alt="search-vector">
+                </div>
+            </div>
+
+            <div class="admin-container">
+                <button class="admin-button">Menu Admin</button>
+            </div>
+
+
+        </div>
+
+
+    </header>
+
+    <!-- here comes the add a product page -->
+
+    
+    <div class="add-item-container">
+
+        <div class="add-item-box">
+
+            <form class="form-registry" data-form>
+                
+                <h2 class="login-title">Add a new product</h2>
+            <input 
+                class="product-add_input__URL"
+                type="text" 
+                placeholder="Enter the product's URL image"
+                required
+                data-url
+            />
+            <input 
+                class="product-add_input__cat"
+                type="text" 
+                placeholder="Enter the Category"
+                data-category
+            />
+            <input 
+                class="product-add_input__name"
+                type="text" 
+                placeholder="Enter the Product's name"
+                required
+                data-name
+            />
+            <input 
+                class="product-add_input__price"
+                type="text" 
+                placeholder="Enter the Product's price"
+                required
+                data-price
+            />
+            <input 
+                class="product-add_input__description"
+                type="text" 
+                placeholder="Enter the Product's Description"
+                required
+                data-description
+                />
+
+            <button class="add-item-button">Add item</button>
+            </form>
+            
+
+        </div>
+
+    </div>
+
+
+    <!-- here comes the Form & about Us section -->
+
+    <div class="auf-container-master">
+
+        <div class="auf-container">
+
+            <div class="auf-logo">
+                <img src="/assets/img/logo.png" alt="logo">
+            </div>
+
+            <div class="about-us">
+                <ul>
+                    <li>About us.</li>
+                    <li>Privacy policy.</li>
+                    <li>Our fidelity program.</li>
+                    <li>Our Stores.</li>
+                    <li>I want to be a franchisee.</li>
+                    <li>Advertise here.</li>
+                </ul>
+            </div>
+
+            <div class="au-form">
+                <p>Leave us your feedback</p>
+                <form action="" class="au-form-inputs">
+                    
+                    <input class="au-input-name" type="text" placeholder="Name">
+                    <input class="au-input-message" type="text" placeholder="Write your message">
+                    <button class="au-button">Send Message</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+        
+    <footer class="footer">
+        <p>Developed by Daniel Chavez Suarez <br>2023</p>
+    </footer>
+
+
+
+
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="./controllers/create-products-controller.js"></script>
+
+
+</body>
+
+</html>

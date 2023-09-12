@@ -1,0 +1,22 @@
+.login-container{
+    width: 100%;
+    background-color: var(--light-grey);
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box{
+    display: block;
+    flex-direction: column;
+    min-width: 430px;
+}
+
+.login-button{
+    width: 100%;
+}
+
+.login-title{
+    text-align: center;
+}

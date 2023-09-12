@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolidStore</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/assets/css/products.css">
+    <link rel="stylesheet" href="/assets/css/detail-page.css">
+    
+</head>
+<body>
+<main class="main-wrap">
+
+    <!-- here comes the header -->
+    <header>
+        <div class="top-bar">
+
+            <div class="top-bar-left">
+                <div class="logo-container">
+                    <img src="/assets/img/logo.png" alt="logo-store">
+                </div>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="What are you searching for?">
+                    <img src="/assets/img/aug-vector.png" alt="search-vector">
+                </div>
+            </div>
+
+        </div>
+
+        
+
+    </header>
+
+    <!-- here comes the detail page section -->
+
+    <div class="dp-container">
+        <div class="dp-image">
+            <img src="https://previews.dropbox.com/p/thumb/ACDBcUlfP8vyPAqeVKA5X9zaZnqUhXIgLAjSIQqjKu6H75PYWORyWPGc4-SQmQeaqcImA7xT_uYV_bdM-CLt7FbIp_bEH-ol1BZnaf7w4dfN0mYV3VRoROut9JF451ZOvZTxCJfcpTbCzUbUwP1YdWI7le40n5leTZkWh073XuYuKYNQQWhI0VP7CadGR5EsGCfHklUMlHpcqjiSGJrQu5lrXWGzshn8rXn0ZVMh7a7hCOmFRoyjffUYCL8FBGkIsSEDx3fMXXKifsbSCw4GXYO9T6zpK2cVS8osU77THRNzDKgmrBwffpVbaqA1PlRM5_vt5dL0uedEJM07xusi62iF/p.png" alt="dp-image">
+        </div>
+
+        <div class="dp-info-container">
+
+            <h2>Pop Cad Bane 476 New</h2>
+            <h5>$60.00</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum delectus, minus alias pariatur eius dolorem saepe
+                molestias ratione suscipit eligendi hic corporis qui voluptatem. Labore quam consequatur asperiores animi ducimus!
+            </p>
+
+        </div>
+
+
+    </div>
+
+    <!-- here comes the products section  -->
+
+    <div class="products-container">
+
+        <div class="products-box">
+            <div class="products-top">
+                <h2 class="products-title">All products - A to Z</h2>
+            </div>
+            <div class="items-container" data-product>
+                
+            
+                
+            </div>    
+
+        </div>
+
+    </div>
+
+
+    <!-- here comes the Form & about Us section -->
+
+    <div class="auf-container-master">
+
+        <div class="auf-container">
+
+            <div class="auf-logo">
+                <img src="/assets/img/logo.png" alt="logo">
+            </div>
+
+            <div class="about-us">
+                <ul>
+                    <li>About us.</li>
+                    <li>Privacy policy.</li>
+                    <li>Our fidelity program.</li>
+                    <li>Our Stores.</li>
+                    <li>I want to be a franchisee.</li>
+                    <li>Advertise here.</li>
+                </ul>
+            </div>
+
+            <div class="au-form">
+                <p>Leave us your feedback</p>
+                <form action="" class="au-form-inputs">
+                    
+                    <input type="text" placeholder="Name">
+                    <br>
+                    <input type="text" placeholder="Write your message">
+                    <br>
+                    <button class="au-button">Send Message</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+        
+    <footer class="footer">
+        <p>Developed by Daniel Chavez Suarez <br>2023</p>
+    </footer>
+
+
+
+
+
+</main>
+
+<script type="module" src="./controllers/products-controller.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = urlParams.get('id');
+  
+      fetch(`/api/products/${productId}`)
+        .then(response => response.json())
+        .then(product => {
+          // Update the DOM with product details
+          document.querySelector('.dp-container h2').textContent = product.name;
+          document.querySelector('.dp-container h5').textContent = product.price;
+          document.querySelector('.dp-container p').textContent = product.description;
+          document.querySelector('.dp-image img').src = product.imageURL;
+        })
+        .catch(error => {
+          console.error('Error fetching product details:', error);
+        });
+    });
+  </script>
+  
+</body>
+
+</html>

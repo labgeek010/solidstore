@@ -1,0 +1,116 @@
+{
+  "product": [
+    {
+      "name": "Pop Cad Bane 476 New",
+      "imageURL": "https://previews.dropbox.com/p/thumb/ACDBcUlfP8vyPAqeVKA5X9zaZnqUhXIgLAjSIQqjKu6H75PYWORyWPGc4-SQmQeaqcImA7xT_uYV_bdM-CLt7FbIp_bEH-ol1BZnaf7w4dfN0mYV3VRoROut9JF451ZOvZTxCJfcpTbCzUbUwP1YdWI7le40n5leTZkWh073XuYuKYNQQWhI0VP7CadGR5EsGCfHklUMlHpcqjiSGJrQu5lrXWGzshn8rXn0ZVMh7a7hCOmFRoyjffUYCL8FBGkIsSEDx3fMXXKifsbSCw4GXYO9T6zpK2cVS8osU77THRNzDKgmrBwffpVbaqA1PlRM5_vt5dL0uedEJM07xusi62iF/p.png",
+      "category": "Pop",
+      "price": "$15,000",
+      "description": "Abcde...",
+      "id": 1
+    },
+    {
+      "name": "Castlevania Dracula",
+      "imageURL": "https://s.cornershopapp.com/product-images/2067957.png?versionId=Ez8ykH5ABMmfNWAuaVxHghpVieZZMzmJ",
+      "category": "Pop",
+      "price": "$20,000",
+      "description": "Abcde...",
+      "id": 2
+    },
+    {
+      "name": "Castlevania Cypha",
+      "imageURL": "https://www.weplay.cl/pub/media/catalog/product/cache/d406ac87fd7d160c9527a5559b847e93/8/8/8896983855340.jpeg",
+      "category": "Pop",
+      "price": "$20,000",
+      "description": "Abcde...",
+      "id": 3
+    },
+    {
+      "name": "Castlevania Trevor",
+      "imageURL": "https://www.bruneiclick.com/cdn/shop/products/71zcSvuIk4L._AC_SL1500.jpg?v=1629317571",
+      "category": "Pop",
+      "price": "$20,000",
+      "description": "Abcde...",
+      "id": 4
+    },
+    {
+      "name": "Castlevania Alucard",
+      "imageURL": "https://cdn11.bigcommerce.com/s-xyod4pvkhn/images/stencil/1280x1280/products/48416/98565/Adrian_Tepes_Vinyl_Art_Toys_b2105251-92db-4bb5-aa0b-dde054cd99fe__23655.1675550779.jpg?c=2",
+      "category": "Pop",
+      "price": "$20,000",
+      "description": "Abcde...",
+      "id": 5
+    },
+    {
+      "name": "Castlevania Blue Fangs",
+      "imageURL": "https://i.pinimg.com/originals/7a/51/f9/7a51f9433b41d0ad5a230aca12f8fc8e.jpg",
+      "category": "Pop",
+      "price": "$20,000",
+      "description": "Abcde...",
+      "id": 6
+    },
+    {
+      "imageURL": "https://www.enter.co/wp-content/uploads/2014/09/ps-tv-dest.jpg",
+      "category": "Console",
+      "name": "Ps Vita TV Black Open Box",
+      "price": "250$",
+      "description": "Mint Condition",
+      "id": 7
+    },
+    {
+      "imageURL": "https://i.etsystatic.com/32195692/r/il/654d25/4627940168/il_fullxfull.4627940168_a820.jpg",
+      "category": "Console",
+      "name": "Ps Vita Slim White Japanese Open Box",
+      "price": "300$",
+      "description": "Clean mint condition",
+      "id": 8
+    },
+    {
+      "imageURL": "https://i0.wp.com/applebygames.co.nz/wp-content/uploads/2022/08/WHITE-PS2-console-NTSC-PHAT-PS2-console.png?fit=1416%2C939&ssl=1",
+      "category": "Console",
+      "name": "PS2 FAT Japanese ",
+      "price": "250$",
+      "description": "ABCD",
+      "id": 9
+    },
+    {
+      "imageURL": "https://m.media-amazon.com/images/I/61kFDLvdM6L._AC_UF1000,1000_QL80_.jpg",
+      "category": "Console",
+      "name": "Nintendo Wii White 8/10 Very Good Conditions",
+      "price": "$75",
+      "description": "Game Cube retro compatible",
+      "id": "ecc4b6f3-b7fa-4d7d-b710-c06f3fa2205c"
+    },
+    {
+      "imageURL": "https://i.ebayimg.com/images/g/ePwAAOSw5Elj6VMA/s-l500.jpg",
+      "category": "Console",
+      "name": "PSP 3000 Metal Gear Solid Edition",
+      "price": "$200",
+      "description": "No box, all accesories included",
+      "id": "30f5abb8-62de-412d-a422-06cc28ea9735"
+    },
+    {
+      "imageURL": "https://i.blogs.es/feaa2f/nueva_sony_ps3_slim/450_1000.jpg",
+      "category": "Console",
+      "name": "PS3 Slim Black",
+      "price": "$190",
+      "description": "No box, all accesories included",
+      "id": "7af474ac-4d28-43ff-9f3f-7656faf6b363"
+    },
+    {
+      "imageURL": "https://cdn.swiatksiazki.pl/media/catalog/product/6/2/6299906613162.jpg?store=default&image-type=large",
+      "category": "Music",
+      "name": "A Matter Of Life And Death (Collector'S Edition)",
+      "price": "$30",
+      "description": "Open box",
+      "id": "a56ef318-1aed-477c-b42f-371fb9bee721"
+    },
+    {
+      "imageURL": "https://m.media-amazon.com/images/I/91qYjGjj1cL._UF1000,1000_QL80_.jpg",
+      "category": "Music",
+      "name": "Number of the Beast CS",
+      "price": "30",
+      "description": "Open box",
+      "id": "671a9da1-214d-4fbf-9c1d-7564b5ccf9fc"
+    }
+  ]
+}

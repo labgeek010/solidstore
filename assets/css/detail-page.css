@@ -1,0 +1,19 @@
+.dp-container {
+    padding: 50px 75px;
+    display: flex;
+    gap: 15px;
+    background-color: var(--light-grey);
+
+}
+
+.dp-image img{
+    width: 560px;
+}
+
+.dp-info-container{
+    display: block;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 150px ;
+}
+
