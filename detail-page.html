@@ -8,9 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="/assets/css/products.css">
-    <link rel="stylesheet" href="/assets/css/detail-page.css">
+    <link rel="stylesheet" href=".styles.css">
+    <link rel="stylesheet" href="./assets/css/products.css">
+    <link rel="stylesheet" href="./assets/css/detail-page.css">
     
 </head>
 <body>
@@ -22,11 +22,11 @@
 
             <div class="top-bar-left">
                 <div class="logo-container">
-                    <img src="/assets/img/logo.png" alt="logo-store">
+                    <img src="./assets/img/logo.png" alt="logo-store">
                 </div>
                 <div class="search-container">
                     <input type="text" class="search-input" placeholder="What are you searching for?">
-                    <img src="/assets/img/aug-vector.png" alt="search-vector">
+                    <img src="./assets/img/aug-vector.png" alt="search-vector">
                 </div>
             </div>
 
@@ -82,7 +82,7 @@
         <div class="auf-container">
 
             <div class="auf-logo">
-                <img src="/assets/img/logo.png" alt="logo">
+                <img src="./assets/img/logo.png" alt="logo">
             </div>
 
             <div class="about-us">
@@ -126,25 +126,7 @@
 </main>
 
 <script type="module" src="./controllers/products-controller.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const urlParams = new URLSearchParams(window.location.search);
-      const productId = urlParams.get('id');
-  
-      fetch(`/api/products/${productId}`)
-        .then(response => response.json())
-        .then(product => {
-          // Update the DOM with product details
-          document.querySelector('.dp-container h2').textContent = product.name;
-          document.querySelector('.dp-container h5').textContent = product.price;
-          document.querySelector('.dp-container p').textContent = product.description;
-          document.querySelector('.dp-image img').src = product.imageURL;
-        })
-        .catch(error => {
-          console.error('Error fetching product details:', error);
-        });
-    });
-  </script>
+
   
 </body>
 
