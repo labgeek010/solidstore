@@ -147,7 +147,7 @@ input{
 
 .items-container {
     display: flex;
-    gap:  16px;
+    gap:  30px 15px;
     flex-wrap: wrap;
     justify-content: center;
 }

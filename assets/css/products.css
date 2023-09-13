@@ -1,6 +1,7 @@
 .products-container{
     padding: 50px 75px;
     background-color: var(--light-grey);
+    gap: 10px;
 }
 
 
@@ -24,5 +25,5 @@
 .item-image{
     width: 175px;
     height: 175px;
-    object-fit: contain;
+    object-fit: cover;
 }
