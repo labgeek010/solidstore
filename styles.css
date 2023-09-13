@@ -152,6 +152,13 @@ input{
     justify-content: center;
 }
 
+.item{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .pop-items-container {
     display: flex;
     gap:  16px;

@@ -6,8 +6,9 @@ const createProduct = ({imageURL, category,name, price, description, id}) => {
     const card = document.createElement("div")
     const content = `
     <div class="item">
+                <div class="image-container">
                 <img class="item-image" src="${imageURL}" alt="item-image">
-                <br>
+                </div>
                 <h5 class="item-category">${category}</h5>
                 <h5 class="item-name">${name}</h5>
                 <p class="price">${price}</p>
@@ -80,4 +81,17 @@ if(PopContainer) {
 }
 
 
+
+const ConsoleContainer = document.querySelector('.consoles-items-container');
+
+if(ConsoleContainer) {
+    productsServices
+    .getProductByCategory('Console')
+    .then((data) => {
+        data.forEach(product => {     
+            const newItem = createProduct(product);
+            ConsoleContainer.appendChild(newItem);
+        });
+    });
+}
     
