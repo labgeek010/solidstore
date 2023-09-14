@@ -3,7 +3,7 @@
 
 
 const productsList = () => {
-    return fetch("http://localhost:3000/product")
+    return fetch("https://solidstore-api.vercel.app/")
         .then(response => response.json())
         .then(data => {
             // Sort the products by category and then by name
@@ -25,7 +25,7 @@ const productsList = () => {
 ////get product by id////
 
 const getProductById = (id) => {
-    return fetch("http://localhost:3000/product")
+    return fetch("https://solidstore-api.vercel.app/")
         .then(response => response.json())
         .then(data => {
             const object = data.find(element => element.id === id);
@@ -36,7 +36,7 @@ const getProductById = (id) => {
 
 /////get product by category ///
 const getProductByCategory = (category) => {
-    return fetch("http://localhost:3000/product")
+    return fetch("https://solidstore-api.vercel.app/")
         .then(response => response.json())
         .then(data => {
             const objectArray = data.filter(element => element.category === category);
@@ -49,7 +49,7 @@ const getProductByCategory = (category) => {
 // //POST
 
  const createProducts =  (imageURL, category, name, price, description, id) => {
-     return fetch(`http://localhost:3000/product`, {
+     return fetch(`https://solidstore-api.vercel.app/`, {
      method: "POST",
      headers: {
          "Content-type":"application/json"
