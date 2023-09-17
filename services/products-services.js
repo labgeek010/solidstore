@@ -70,11 +70,18 @@ const getProductByCategory = (category) => {
     throw new Error("We couldn't create your item")
 }
 
+const detailpage = (id) =>{
+    return fetch(`https://solidstore-api.vercel.app/product/${id}`).then((response) => 
+    response.json()
+    );
+};
+
 
 
 export const productsServices = {
     productsList,
     createProducts,
     getProductById,
-    getProductByCategory
+    getProductByCategory,
+    detailpage
 }
