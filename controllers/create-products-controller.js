@@ -1,4 +1,4 @@
-import {productsServices} from  "../services/products-services.js";
+import {productsServices} from  "/services/products-services.js";
 
 const form = document.querySelector('[data-form]');
 
@@ -13,7 +13,7 @@ form.addEventListener("submit", (event) => {
 
     productsServices.createProducts(URL, category,name, price, description)
     .then(Response => {
-        window.location.href = "../products.html"
+        window.location.href = "/products.html"
 
         console.log(Response)
     }) .catch(error => {
